@@ -52,7 +52,7 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all .3s;
 }
 .nav a:hover {
   color: white
@@ -74,7 +74,7 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .3s;
   object-fit: cover;
 }
 header .profile-image:hover {
@@ -100,12 +100,15 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all .3s;
 }
 .project {
   padding: 10px;
   border-radius: 30px;
   height: 150px;
+}
+.project:hover {
+  -webkit-filter: grayscale(100%);
 }
 .card:hover {
   border-color: #99ffc0;
@@ -158,11 +161,9 @@ a.social {
   height: 30px;
   background-size: 30px 30px;
   opacity: .4;
-  transition: all .5s;
+  transition: all .3s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
