@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  color: rgb(75, 75, 77);
+}
+body {
+	background-image: linear-gradient(135deg, #e4f5fc 0%,#bfe8f9 25%,#9fd8ef 50%,#93d3ed 75%,#1cacea 100%);
+	background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
+	overflow-y: scroll;
+}
+h2 {
+  color: rgb(75, 75, 77);
+  font-style: italic;
+}
+p {
+  color: green;
+}
+ul {
+  list-style-type: none;
+}
+#profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+.center {
+  text-align: center;
+}
+.projects img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+@media (min-width:768px) {
+
+}
+
+@media (min-width:1024px) {
+
+}
