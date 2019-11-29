@@ -1,6 +1,9 @@
+// Selected all children of Students
 const studentList = document.querySelector(".student-list").children
+// Limit students on page
 const studentsPerPage = 10
 
+// Function that shows only 10 students on page and hides the rest
 const ShowPage = (list, pageNumber) => {
    let start = (pageNumber * studentsPerPage) - studentsPerPage;
    let end = pageNumber * studentsPerPage;
@@ -9,6 +12,7 @@ const ShowPage = (list, pageNumber) => {
    }
 }
 
+// Function that adds links to bottom of pages
 const appendLinks = (list) => {
    const site = document.querySelector('.page');
    const pagination = document.createElement('div');
@@ -18,6 +22,7 @@ const appendLinks = (list) => {
    pagination.appendChild(pagesList);
    site.appendChild(pagination);
    
+   // Loop to create links
    for(i = 1; i <= pages; i++){
       let icon = document.createElement('li');
       let number = document.createElement('a');
@@ -31,10 +36,12 @@ const appendLinks = (list) => {
             pageLinks[l].classList.remove('active');
          }
          ShowPage(list,number.textContent)
+         // Show which page user is currently on
          e.target.classList.add('active');
       })
    }
 }
 
+// Call functions
 ShowPage(studentList,1);
 appendLinks(studentList);
